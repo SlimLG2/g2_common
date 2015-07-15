@@ -155,7 +155,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # I/O scheduler
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.io.scheduler=zen
+    sys.io.scheduler=deadline
 
 # Memory
 PRODUCT_PROPERTY_OVERRIDES += \
