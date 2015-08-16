@@ -554,6 +554,9 @@ on property:init.svc.bootanim=stopped
     write /sys/devices/system/cpu/cpu3/online 0
     write /sys/module/msm_thermal/core_control/enabled 1
 
+    chmod 0664 /sys/module/lowmemorykiller/parameters/minfree
+    write /sys/module/lowmemorykiller/parameters/minfree "2048,4096,8192,16384,24576,32768"
+
     start mpdecision
 
 on property:init.svc.bootanim=running
