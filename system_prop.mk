@@ -3,7 +3,7 @@
 #
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=480 \
+    ro.sf.lcd_density=380 \
     ro.opengles.version=196608
 
 # Audio Configuration
