@@ -492,10 +492,19 @@ on property:service.bootanim.exit=1
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 300000
+
+    chmod 644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+    chmod 644 /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
+    chmod 644 /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
+    chmod 644 /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1958400
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq 1958400
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 1958400
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq 1958400
+    chmod 444 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+    chmod 444 /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
+    chmod 444 /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
+    chmod 444 /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq
 
     chown root system /sys/devices/system/cpu/cpu1/online
     chown root system /sys/devices/system/cpu/cpu2/online
@@ -526,10 +535,18 @@ on property:init.svc.bootanim=stopped
     write /sys/devices/system/cpu/cpufreq/interactive/max_freq_hysteresis 100000
     write /sys/devices/system/cpu/cpufreq/interactive/timer_rate 30000
 
+    chmod 644 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+    chmod 644 /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
+    chmod 644 /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
+    chmod 644 /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1958400
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq 1958400
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 1958400
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq 1958400
+    chmod 444 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+    chmod 444 /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
+    chmod 444 /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
+    chmod 444 /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq
 
     write /sys/module/cpu_boost/parameters/boost_ms 20
     write /sys/module/cpu_boost/parameters/sync_threshold 0
