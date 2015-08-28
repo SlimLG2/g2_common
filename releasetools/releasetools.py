@@ -56,6 +56,13 @@ def FullOTA_InstallEnd(info):
   info.script.Print(" ");
   info.script.Print("Powered by HealthyHoney KERNEL");
   info.script.Print(" ");
+  info.script.Print("       *  --.            ");
+  info.script.Print("           \  \   *      ");
+  info.script.Print("            )^ |    *    ");
+  info.script.Print("   *       <_, |         ");
+  info.script.Print("      *    ./ /          ");
+  info.script.Print("          --'   *        ");
+  info.script.Print(" ");
   info.script.Mount("/system")
   info.script.AppendExtra('assert(run_program("/system/bin/panel.sh") == 0);')
   info.script.AppendExtra('assert(run_program("/sbin/sh", "-c", "busybox dd if=/tmp/boot.img of=/dev/block/platform/msm_sdcc.1/by-name/boot") == 0);')
