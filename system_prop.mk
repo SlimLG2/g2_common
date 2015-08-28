@@ -55,6 +55,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi Configuration
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
+    wifi.supplicant_scan_interval=180 \
     wlan.chip.vendor=brcm \
     wlan.chip.version=bcm4335 \
     wifi.lge.patch=true \
