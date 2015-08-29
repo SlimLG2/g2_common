@@ -117,3 +117,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # QC vendor extension
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
+
+# Google Client ID
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase.ms=android-lge \
+    ro.com.google.clientidbase.am=android-lge \
+    ro.com.google.clientidbase.gmm=android-lge \
+    ro.com.google.clientidbase.yt=android-lge

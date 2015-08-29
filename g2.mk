@@ -20,6 +20,9 @@ $(call inherit-product-if-exists, vendor/lge/g2-common/g2-common-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
+# Google Client ID
+PRODUCT_GMS_CLIENTID_BASE := android-lge
+
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
