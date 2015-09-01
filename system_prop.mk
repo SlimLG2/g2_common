@@ -25,7 +25,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicecall=true \
     persist.audio.fluence.voicerec=false \
-    persist.audio.fluence.speaker=true
+    persist.audio.fluence.speaker=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.fluencetype=fluence
