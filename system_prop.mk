@@ -121,3 +121,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase.am=android-lge \
     ro.com.google.clientidbase.gmm=android-lge \
     ro.com.google.clientidbase.yt=android-lge
+
+# VIDC debug_levels
+# 1:ERROR 2:HIGH 4:LOW 0:NOLOGS 7:AllLOGS
+PRODUCT_PROPERTY_OVERRIDES += \
+    vidc.debug.level=1
