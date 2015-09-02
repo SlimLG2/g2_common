@@ -6,6 +6,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=380 \
     ro.opengles.version=196608
 
+# MM parser
+PRODUCT_PROPERTY_OVERRIDES += \
+    mm.enable.qcom_parser=3310129
+
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.24bit.enable=true \
