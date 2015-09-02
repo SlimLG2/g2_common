@@ -6,10 +6,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=380 \
     ro.opengles.version=196608
 
-# MM parser
-PRODUCT_PROPERTY_OVERRIDES += \
-    mm.enable.qcom_parser=3310129
-
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.24bit.enable=true \
@@ -21,7 +17,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Streaming AV offload
 PRODUCT_PROPERTY_OVERRIDES += \
-    av.offload.enable=false \
+    av.offload.enable=true \
     av.streaming.offload.enable=true
 
 # Stagefright smooth streaming
@@ -34,6 +30,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.fluence.voicecall=true \
     persist.audio.fluence.voicerec=false \
     persist.audio.fluence.speaker=false
+
+# MM parser
+PRODUCT_PROPERTY_OVERRIDES += \
+    mm.enable.qcom_parser=3310129
 
 # VoIP and Direct output for PCM format
 PRODUCT_PROPERTY_OVERRIDES += \
