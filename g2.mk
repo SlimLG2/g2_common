@@ -85,7 +85,11 @@ PRODUCT_COPY_FILES += \
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf
+    $(LOCAL_PATH)/gps/etc/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/etc/flp.conf:system/etc/flp.conf \
+    $(LOCAL_PATH)/gps/etc/izat.conf:system/etc/izat.conf \
+    $(LOCAL_PATH)/gps/etc/quipc.conf:system/etc/quipc.conf \
+    $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf
 
 # IRSC
 PRODUCT_COPY_FILES += \
@@ -181,11 +185,7 @@ PRODUCT_BOOT_JARS += qcmediaplayer
 
 # GPS
 PRODUCT_PACKAGES += \
-    libloc_adapter \
-    libloc_eng \
-    libloc_api_v02 \
-    libgps.utils \
-    gps.g2
+    gps.msm8974
 
 PRODUCT_PACKAGES += \
     hwaddrs
