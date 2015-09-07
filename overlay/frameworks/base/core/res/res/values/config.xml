@@ -259,18 +259,15 @@
          backlight values for LUX levels between these control points. -->
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
-        <item>25</item>
-        <item>48</item>
-        <item>82</item>
-        <item>170</item>
-        <item>350</item>
+        <item>20</item>
+        <item>100</item>
+        <item>200</item>
         <item>500</item>
-        <item>700</item>
+        <item>800</item>
         <item>1000</item>
-        <item>1400</item>
-        <item>2400</item>
-        <item>3500</item>
-        <item>9000</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>2500</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -278,19 +275,17 @@
          than the size of the config_autoBrightnessLevels array.
          The brightness values must be between 0 and 255 and be non-decreasing. -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>30</item>
-        <item>96</item>
-        <item>111</item>
-        <item>137</item>
-        <item>147</item>
-        <item>170</item>
-        <item>178</item>
-        <item>183</item>
-        <item>195</item>
-        <item>212</item>
-        <item>220</item>
-        <item>235</item>
-        <item>255</item>
+        <item>6</item>   <!-- 2% -->   <!-- 0 -->
+        <item>20</item>  <!-- 7% -->   <!-- 1 -->
+        <item>40</item>  <!-- 15% -->  <!-- 20 -->
+        <item>65</item>  <!-- 25% -->  <!-- 100 -->
+        <item>90</item>  <!-- 35% -->  <!-- 200 -->
+        <item>102</item> <!-- 40% -->  <!-- 500 -->
+        <item>115</item> <!-- 45% -->  <!-- 800 -->
+        <item>140</item> <!-- 55% -->  <!-- 1000 -->
+        <item>180</item> <!-- 70% -->  <!-- 1200 -->
+        <item>218</item> <!-- 85% -->  <!-- 1800 -->
+        <item>255</item> <!-- 100% --> <!-- 2500 -->
     </integer-array>
 
     <!-- Array of output values for button backlight corresponding to the LUX values
