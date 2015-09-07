@@ -37,6 +37,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 # Enable dex-preoptimization to speed up first boot sequence
 WITH_DEXPREOPT := true
 
+# Enable transparent compression
+TARGET_TRANSPARENT_COMPRESSION_METHOD := lz4
+
 # Kernel information
 BOARD_KERNEL_BASE     := 0x00000000
 BOARD_KERNEL_CMDLINE := no_underclock=0 console=none androidboot.hardware=g2 androidboot.bootdevice=msm_sdcc.1 user_debug=31 msm_rtb.filter=0x0 mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_g2_lgd_cmd
