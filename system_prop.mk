@@ -8,17 +8,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
-    audio.offload.24bit.enable=true \
     audio.offload.buffer.size.kb=32 \
-    audio.offload.gapless.enabled=false \
+    audio.offload.gapless.enabled=true \
     audio.offload.multiple.enabled=false \
-    audio.offload.pcm.enable=true \
+    audio.offload.pcm.16bit.enable=true \
+    audio.offload.pcm.24bit.enable=true \
     media.aac_51_output_enabled=true
 
 # Streaming AV offload
 PRODUCT_PROPERTY_OVERRIDES += \
     av.offload.enable=true \
-    av.streaming.offload.enable=true
+    av.streaming.offload.enable=false
 
 # Stagefright smooth streaming
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -27,7 +27,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.fluencetype=none \
-    persist.audio.fluence.voicecall=true \
+    persist.audio.fluence.voicecall=false \
     persist.audio.fluence.voicerec=false \
     persist.audio.fluence.speaker=false
 
@@ -45,7 +45,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Stagefright recorder compress offload
 PRODUCT_PROPERTY_OVERRIDES += \
-    tunnel.audio.encode=false
+    tunnel.audio.encode=true
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
