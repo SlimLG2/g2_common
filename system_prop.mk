@@ -6,30 +6,36 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=380 \
     ro.opengles.version=196608
 
-# Audio
+# AAC Stagefright
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.aac_51_output_enabled=true
+
+# Audio offload
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.buffer.size.kb=32 \
     audio.offload.gapless.enabled=true \
+    audio.offload.min.duration.secs=30 \
     audio.offload.multiple.enabled=false \
-    audio.offload.pcm.16bit.enable=true \
-    audio.offload.pcm.24bit.enable=true \
-    media.aac_51_output_enabled=true
+    audio.offload.pcm.16bit.enable=1 \
+    audio.offload.pcm.24bit.enable=1 \
+    audio.offload.pcm.enable=true
 
-# Streaming AV offload
-PRODUCT_PROPERTY_OVERRIDES += \
+# AV offload
     av.offload.enable=true \
-    av.streaming.offload.enable=false
+    av.streaming.offload.enable=true
 
-# Stagefright smooth streaming
+# Smooth streaming Stagefright
 PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.smoothstreaming=true
 
+# ALSA
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.audio.handset.mic=digital
+
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qc.sdk.audio.fluencetype=none \
-    persist.audio.fluence.voicecall=false \
-    persist.audio.fluence.voicerec=false \
-    persist.audio.fluence.speaker=false
+    ro.qc.sdk.audio.fluencetype=fluence \
+    persist.audio.fluence.mode=endfire
 
 # MM parser
 PRODUCT_PROPERTY_OVERRIDES += \
