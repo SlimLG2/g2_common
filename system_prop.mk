@@ -146,3 +146,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # 1:ERROR 2:HIGH 4:LOW 0:NOLOGS 7:AllLOGS
 PRODUCT_PROPERTY_OVERRIDES += \
     vidc.debug.level=1
+
+# I/O scheduler
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.io.scheduler=zen
