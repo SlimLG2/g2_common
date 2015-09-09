@@ -12,6 +12,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio offload
 PRODUCT_PROPERTY_OVERRIDES += \
+    audio.offload.disable=true \
     audio.offload.buffer.size.kb=32 \
     audio.offload.gapless.enabled=false \
     audio.offload.min.duration.secs=30 \
@@ -22,7 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # AV offload
 PRODUCT_PROPERTY_OVERRIDES += \
-    av.offload.enable=false \
+    av.offload.enable=true \
     av.streaming.offload.enable=false
 
 # Smooth streaming Stagefright
