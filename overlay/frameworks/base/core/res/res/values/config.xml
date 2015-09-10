@@ -274,10 +274,10 @@
          than the size of the config_autoBrightnessLevels array.
          The brightness values must be between 0 and 255 and be non-decreasing. -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>60</item>   <!-- 0-1 -->
-        <item>90</item>   <!-- 1-4 -->
-        <item>110</item>  <!-- 4-40 -->
-        <item>120</item>  <!-- 40-350 -->
+        <item>40</item>   <!-- 0-1 -->
+        <item>85</item>   <!-- 1-4 -->
+        <item>100</item>  <!-- 4-40 -->
+        <item>115</item>  <!-- 40-350 -->
         <item>140</item>  <!-- 350-600 -->
         <item>170</item>  <!-- 600-1000 -->
         <item>215</item>  <!-- 1000-1600 -->
