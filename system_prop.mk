@@ -155,7 +155,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # I/O scheduler
 PRODUCT_PROPERTY_OVERRIDES += \
-    sys.io.scheduler=deadline
+    sys.io.scheduler=bfq
 
 # Memory
 PRODUCT_PROPERTY_OVERRIDES += \
