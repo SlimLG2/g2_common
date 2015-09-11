@@ -14,7 +14,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.disable=true \
     audio.offload.buffer.size.kb=32 \
-    audio.offload.gapless.enabled=false \
+    audio.offload.gapless.enabled=true \
     audio.offload.min.duration.secs=30 \
     audio.offload.multiple.enabled=false \
     audio.offload.pcm.16bit.enable=true \
@@ -23,12 +23,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # AV offload
 PRODUCT_PROPERTY_OVERRIDES += \
-    av.offload.enable=false \
+    av.offload.enable=true \
     av.streaming.offload.enable=false
 
 # Smooth streaming Stagefright
 PRODUCT_PROPERTY_OVERRIDES += \
-    mm.enable.smoothstreaming=false
+    mm.enable.smoothstreaming=true
 
 # ALSA
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -57,7 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Stagefright recorder compress offload
 PRODUCT_PROPERTY_OVERRIDES += \
-    tunnel.audio.encode=false
+    tunnel.audio.encode=true
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
