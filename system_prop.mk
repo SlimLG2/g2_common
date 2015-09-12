@@ -24,7 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # AV offload
 PRODUCT_PROPERTY_OVERRIDES += \
     av.offload.enable=true \
-    av.streaming.offload.enable=false
+    av.streaming.offload.enable=true
 
 # Smooth streaming Stagefright
 PRODUCT_PROPERTY_OVERRIDES += \
