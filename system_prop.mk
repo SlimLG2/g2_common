@@ -12,14 +12,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio offload
 PRODUCT_PROPERTY_OVERRIDES += \
-    audio.offload.disable=true \
     audio.offload.buffer.size.kb=32 \
     audio.offload.gapless.enabled=true \
-    audio.offload.min.duration.secs=30 \
     audio.offload.multiple.enabled=false \
-    audio.offload.pcm.16bit.enable=true \
-    audio.offload.pcm.24bit.enable=true \
-    audio.offload.pcm.enable=true
+    audio.offload.pcm.24bit.enable=true
 
 # AV offload
 PRODUCT_PROPERTY_OVERRIDES += \
