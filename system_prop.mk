@@ -57,7 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Stagefright recorder compress offload
 PRODUCT_PROPERTY_OVERRIDES += \
-    tunnel.audio.encode=true
+    tunnel.audio.encode=false
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
