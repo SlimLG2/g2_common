@@ -98,6 +98,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.g2.rc \
     init.g2.usb.rc \
+    init.g2.power.rc \
     init.qcom.sh \
     ueventd.g2.rc \
     fstab.g2
