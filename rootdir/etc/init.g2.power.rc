@@ -73,7 +73,14 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
     write /sys/module/msm_thermal/core_control/enabled 1
-    start mpdecision
+
+    write /sys/module/msm_hotplug/min_cpus_online 1
+    write /sys/module/msm_hotplug/cpus_boosted 2
+    write /sys/module/msm_hotplug/down_lock_duration 500
+    write /sys/module/msm_hotplug/boost_lock_duration 3000
+    write /sys/module/msm_hotplug/update_rates "200 5:100 50:50 350:200"
+    write /sys/module/msm_hotplug/fast_lane_load 100
+    write /sys/module/msm_hotplug/max_cpus_online_susp 1
 
 on charger
     wait /dev/block/platform/msm_sdcc.1/by-name/modem
@@ -110,7 +117,6 @@ on charger
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
     write /sys/module/msm_thermal/core_control/enabled 1
-    start mpdecision
 
 on class_start:late_start
     trigger enable-low-power
@@ -139,7 +145,6 @@ on property:sys.perf.profile=0
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
     write /sys/module/msm_thermal/core_control/enabled 1
-    start mpdecision
 
 # CM Balanced Profile
 on property:sys.perf.profile=1
@@ -178,7 +183,6 @@ on property:sys.perf.profile=1
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
     write /sys/module/msm_thermal/core_control/enabled 1
-    start mpdecision
 
 # CM Performance Profile
 on property:sys.perf.profile=2
