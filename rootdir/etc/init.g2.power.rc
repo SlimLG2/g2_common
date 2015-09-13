@@ -74,13 +74,6 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu3/online 0
     write /sys/module/msm_thermal/core_control/enabled 1
 
-    write /sys/module/msm_hotplug/min_cpus_online 1
-    write /sys/module/msm_hotplug/cpus_boosted 2
-    write /sys/module/msm_hotplug/down_lock_duration 500
-    write /sys/module/msm_hotplug/boost_lock_duration 3000
-    write /sys/module/msm_hotplug/update_rates "200 5:100 50:50 350:200"
-    write /sys/module/msm_hotplug/fast_lane_load 100
-
 on charger
     wait /dev/block/platform/msm_sdcc.1/by-name/modem
     mount vfat /dev/block/platform/msm_sdcc.1/by-name/modem /firmware ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337
