@@ -28,15 +28,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # ALSA
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.audio.handset.mic=digital
+    persist.audio.handset.mic.type=digital
+
+# Platform
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.audio.dualmic.config=endfire
 
 # Fluence
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qc.sdk.audio.fluencetype=fluence \
-    persist.audio.fluence.voicecall=false \
+    persist.audio.fluence.voicecall=true \
     persist.audio.fluence.voicerec=false \
-    persist.audio.fluence.speaker=false \
-    persist.audio.fluence.mode=endfire
+    persist.audio.fluence.speaker=false
 
 # MM parser
 PRODUCT_PROPERTY_OVERRIDES += \
