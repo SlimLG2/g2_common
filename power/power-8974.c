@@ -118,7 +118,9 @@ int power_hint_override(__attribute__((unused)) struct power_module *module,
 
     if (hint == POWER_HINT_LAUNCH_BOOST) {
         int duration = 2000;
-        int resources[] = { CPUS_ONLINE_MIN_3, 0x211, 0x311, 0x411 };
+        int resources[] = { CPUS_ONLINE_MIN_3,
+            CPU0_MIN_FREQ_TURBO_MAX, CPU1_MIN_FREQ_TURBO_MAX,
+            CPU2_MIN_FREQ_TURBO_MAX, CPU3_MIN_FREQ_TURBO_MAX };
 
         interaction(duration, sizeof(resources)/sizeof(resources[0]), resources);
 
