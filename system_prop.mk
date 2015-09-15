@@ -149,10 +149,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vidc.debug.level=1
 
-# I/O scheduler
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.io.scheduler=sio
-
 # Memory
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
