@@ -155,16 +155,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Memory
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heapgrowthlimit=128m \
-    dalvik.vm.heapsize=256m \
-    dalvik.vm.heaptargetutilization=0.25 \
+    dalvik.vm.heapgrowthlimit=256m \
+    dalvik.vm.heapsize=512m \
+    dalvik.vm.heaptargetutilization=0.5 \
     dalvik.vm.heapminfree=2m \
     dalvik.vm.heapmaxfree=8m
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hwui.texture_cache_size=72 \
-    ro.hwui.layer_cache_size=48 \
+    ro.hwui.texture_cache_size=76 \
+    ro.hwui.layer_cache_size=52 \
     ro.hwui.r_buffer_cache_size=8 \
     ro.hwui.path_cache_size=32 \
     ro.hwui.gradient_cache_size=1 \
