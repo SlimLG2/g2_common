@@ -275,14 +275,14 @@
          The brightness values must be between 0 and 255 and be non-decreasing. -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
         <item>50</item>   <!-- 0-1 -->
-        <item>86</item>   <!-- 1-4 -->
-        <item>96</item>   <!-- 4-40 -->
+        <item>85</item>   <!-- 1-4 -->
+        <item>95</item>   <!-- 4-40 -->
         <item>115</item>  <!-- 40-350 -->
         <item>140</item>  <!-- 350-600 -->
-        <item>170</item>  <!-- 600-1000 -->
-        <item>215</item>  <!-- 1000-1600 -->
-        <item>230</item>  <!-- 1600-3000 -->
-        <item>254</item>  <!-- 3000-10000 -->
+        <item>160</item>  <!-- 600-1000 -->
+        <item>175</item>  <!-- 1000-1600 -->
+        <item>210</item>  <!-- 1600-3000 -->
+        <item>225</item>  <!-- 3000-10000 -->
         <item>255</item>  <!-- 10000+ -->
     </integer-array>
 
