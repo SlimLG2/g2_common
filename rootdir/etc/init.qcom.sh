@@ -228,3 +228,11 @@ case "$target" in
         start_msm_irqbalance
         ;;
 esac
+
+if [ "$(pgrep -f "/system/bin/thermal-engine" | wc -l)" -eq "0" ]; then
+   start thermal-engine
+fi;
+echo Y > /sys/module/msm_thermal/parameters/intelli_enabled
+echo 76 > /sys/module/msm_thermal/parameters/limit_temp_degC
+echo 74 > /sys/module/msm_thermal/parameters/core_limit_temp_degC
+busybox renice -n -17 -p "$(pgrep -f "/system/bin/thermal-engine")"
