@@ -592,7 +592,7 @@ service bugreport /system/bin/dumpstate -d -p -B \
     oneshot
     keycodes 114 115 116
 
-service mpdecision /system/bin/mpdecision --avg_comp --no_sleep
+service mpdecision /system/bin/mpdecision --avg_comp
    class late_start
    user root
    group root system

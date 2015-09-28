@@ -135,6 +135,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp \
     persist.sys.isUsbOtgEnabled=true
 
+# QC vendor extension
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
+
 # Google Client ID
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase.ms=android-lge \
@@ -169,3 +173,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_small_cache_height=1024 \
     ro.hwui.text_large_cache_width=2048 \
     ro.hwui.text_large_cache_height=1024
+
+# MP-Decision
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.qualcomm.perf.cores_online=2
