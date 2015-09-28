@@ -583,10 +583,9 @@ service bugreport /system/bin/dumpstate -d -p -B \
     keycodes 114 115 116
 
 service mpdecision /system/bin/mpdecision --avg_comp --no_sleep
-   class main
+   class late_start
    user root
    group root system
-   disabled
 
 service thermal-engine /system/bin/thermal-engine
     class main
