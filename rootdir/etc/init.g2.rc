@@ -389,6 +389,9 @@ on post-fs-data
 
     setprop vold.post_fs_data_done 1
 
+    # communicate with mpdecision and thermald
+    mkdir /dev/socket/mpdecision 2770 system system
+
     # Create a folder for SRS to be able to create a usercfg file
     mkdir /data/data/media 0770 media media
 
@@ -578,6 +581,12 @@ service bugreport /system/bin/dumpstate -d -p -B \
     disabled
     oneshot
     keycodes 114 115 116
+
+service mpdecision /system/bin/mpdecision --avg_comp --no_sleep
+   class main
+   user root
+   group root system
+   disabled
 
 service thermal-engine /system/bin/thermal-engine
     class main
