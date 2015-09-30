@@ -40,8 +40,28 @@ on enable-low-power
     write /sys/module/msm_pm/modes/cpu2/retention/idle_enabled 1
     write /sys/module/msm_pm/modes/cpu3/retention/idle_enabled 1
 
+    write /sys/module/msm_thermal/core_control/enabled 0
+    write /sys/devices/system/cpu/cpu0/online 1
+    write /sys/devices/system/cpu/cpu1/online 1
+    write /sys/devices/system/cpu/cpu2/online 1
+    write /sys/devices/system/cpu/cpu3/online 1
+
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor uberdemand
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor uberdemand
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor uberdemand
+    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor uberdemand
+
     write /sys/class/devfreq/qcom,cpubw.42/governor cpubw_hwmon
     write /sys/class/devfreq/fdb00000.qcom,kgsl-3d0/governor msm-adreno-tz
+
+    # Permission for Power HAL CM extension
+    chown root system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+    chmod 664 /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+
+    write /sys/devices/system/cpu/cpu1/online 0
+    write /sys/devices/system/cpu/cpu2/online 0
+    write /sys/devices/system/cpu/cpu3/online 0
+    write /sys/module/msm_thermal/core_control/enabled 1
 
 on charger
     wait /dev/block/platform/msm_sdcc.1/by-name/modem
@@ -117,10 +137,10 @@ on property:sys.perf.profile=1
     write /sys/devices/system/cpu/cpu2/online 1
     write /sys/devices/system/cpu/cpu3/online 1
 
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor nightmare
-    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor nightmare
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor nightmare
-    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor nightmare
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor uberdemand
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor uberdemand
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor uberdemand
+    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor uberdemand
 
     write /sys/class/devfreq/qcom,cpubw.42/governor msm-adreno-tz
     write /sys/class/devfreq/fdb00000.qcom,kgsl-3d0/governor msm-adreno-tz
