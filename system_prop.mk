@@ -47,7 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # VoIP and Direct output for PCM format
 PRODUCT_PROPERTY_OVERRIDES += \
     use.dedicated.device.for.voip=false \
-    use.voice.path.for.pcm.voip=false
+    use.voice.path.for.pcm.voip=true
 
 # Surround sound recording
 PRODUCT_PROPERTY_OVERRIDES += \
