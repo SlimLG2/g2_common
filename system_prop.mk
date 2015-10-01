@@ -68,9 +68,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=LgeLteRIL
 
-# Up to 3 layers can go through overlays
+# HW Composer
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.hwc.mdpcomp.enable=true
+    persist.hwc.mdpcomp.enable=true \
+    debug.mdpcomp.logs=0
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
