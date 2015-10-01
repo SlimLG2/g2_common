@@ -7,9 +7,6 @@ on early-init
     write /sys/kernel/sched/arch_power 0
     write /sys/kernel/sched/gentle_fair_sleepers 0
 
-    # Simple GPU
-    write /sys/module/simple_gpu_algorithm/parameters/simple_gpu_activate 1
-
     chown root system /sys/devices/system/cpu/cpu1/online
     chown root system /sys/devices/system/cpu/cpu2/online
     chown root system /sys/devices/system/cpu/cpu3/online
