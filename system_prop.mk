@@ -88,7 +88,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=180
+    wifi.supplicant_scan_interval=180 \
+    wifi.lge.aggregation=true \
+    wifi.lge.mhp=true \
+    wifi.lge.offdelay=false \
+    wifi.lge.offloading=true \
+    wifi.lge.patch=true \
+    wlan.chip.vendor=brcm \
+    wlan.chip.version=bcm4335 \
+    wlan.lge.concurrency=MCC \
+    wlan.lge.dcf.enable=true \
+    wlan.lge.softap5g=true \
+    wlan.lge.supportsimaka=yes
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.recordable.rgba8888=1
