@@ -92,9 +92,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wlan.chip.vendor=brcm \
     wlan.chip.version=bcm4335
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.recordable.rgba8888=1
-
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sdk.sensors.gestures=true \
