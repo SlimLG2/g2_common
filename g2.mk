@@ -118,13 +118,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-# Live Wallpapers
-PRODUCT_PACKAGES += \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    VisualizationWallpapers \
-    librs_jni
-
 # NFC packages
 PRODUCT_PACKAGES += \
     Tag \
@@ -147,7 +140,6 @@ PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
 PRODUCT_PACKAGES += \
-    libgenlock \
     liboverlay \
     hwcomposer.msm8974 \
     gralloc.msm8974 \
