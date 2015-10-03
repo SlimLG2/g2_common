@@ -10,9 +10,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true
 
+# Audio offload
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.offload.buffer.size.kb=32 \
+    audio.offload.gapless.enabled=true \
+    audio.offload.multiple.enabled=false \
+    audio.offload.pcm.24bit.enable=true
+
 # AV offload
 PRODUCT_PROPERTY_OVERRIDES += \
-    av.offload.enable=false
+    av.offload.enable=true \
+    av.streaming.offload.enable=true
 
 # Smooth streaming Stagefright
 PRODUCT_PROPERTY_OVERRIDES += \
