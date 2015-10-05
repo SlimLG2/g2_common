@@ -20,10 +20,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wlan.chip.vendor=brcm \
     wlan.chip.version=bcm4335
 
-# Init
-PRODUCT_PACKAGES += \
-    init.g2.power.rc
-
 #
 # Audio/Video
 #
