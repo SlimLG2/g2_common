@@ -25,8 +25,8 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import init.g2.usb.rc
 import init.g2.power.rc
+import init.g2.usb.rc
 
 on early-init
     symlink /dev/diag_lge /dev/diag
