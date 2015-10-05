@@ -114,8 +114,7 @@ PRODUCT_PACKAGES += \
     init.g2.usb.rc \
     init.qcom.sh \
     panel.sh \
-    ueventd.g2.rc \
-    init.g2.power.rc
+    ueventd.g2.rc
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \
