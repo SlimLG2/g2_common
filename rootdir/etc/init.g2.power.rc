@@ -7,6 +7,10 @@ on early-init
     write /sys/kernel/sched/arch_power 0
     write /sys/kernel/sched/gentle_fair_sleepers 0
 
+    # Tune entropy parameters
+    write /proc/sys/kernel/random/read_wakeup_threshold 512
+    write /proc/sys/kernel/random/write_wakeup_threshold 256
+
 on enable-low-power
     write /sys/module/lpm_levels/enable_low_power/l2 4
     write /sys/module/msm_pm/modes/cpu0/power_collapse/suspend_enabled 1
