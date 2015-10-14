@@ -23,6 +23,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    nfc.app_log_level=2 \
+    nfc.enable_protocol_log=0
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
