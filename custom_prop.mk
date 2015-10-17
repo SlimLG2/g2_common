@@ -111,10 +111,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # MP-Decision
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.perf.cores_online=1
-
-#
-# QCOM RIL
-#
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ril.wake_lock_timeout=300
