@@ -26,8 +26,8 @@
     <ctl name="LINEOUT4 Volume" value="12" />
     <ctl name="HPHL Volume" value="20" />
     <ctl name="HPHR Volume" value="20" />
-    <ctl name="RX1 Digital Volume" value="62" />
-    <ctl name="RX2 Digital Volume" value="62" />
+    <ctl name="RX1 Digital Volume" value="68" />
+    <ctl name="RX2 Digital Volume" value="68" />
     <ctl name="RX3 Digital Volume" value="84" />
     <ctl name="RX4 Digital Volume" value="84" />
     <ctl name="RX5 Digital Volume" value="84" />
@@ -469,8 +469,8 @@
 
     <path name="speaker-mic">
         <path name="adc5" />
-        <ctl name="ADC5 Volume" value="12" />
-        <ctl name="DEC2 Volume" value="65" />
+        <ctl name="ADC5 Volume" value="18" />
+        <ctl name="DEC2 Volume" value="70" />
     </path>
 
     <path name="handset">
@@ -601,8 +601,8 @@
 
     <path name="voice-headset-mic">
         <path name="headset-mic" />
-        <ctl name="DEC5 Volume" value="66" />
-        <ctl name="ADC2 Volume" value="11" />
+        <ctl name="DEC5 Volume" value="72" />
+        <ctl name="ADC2 Volume" value="16" />
     </path>
 
     <path name="speaker-and-headphones">
@@ -993,8 +993,8 @@
 
     <path name="loopback-headset-mic">
         <path name="headset-mic" />
-        <ctl name="DEC5 Volume" value="60" />
-        <ctl name="ADC2 Volume" value="8" />
+        <ctl name="DEC5 Volume" value="66" />
+        <ctl name="ADC2 Volume" value="14" />
     </path>
 
     <path name="loopback-handset-mic">
@@ -1104,8 +1104,8 @@
 
     <path name="voip-headset-mic">
         <path name="headset-mic" />
-        <ctl name="ADC2 Volume" value="12" />
-        <ctl name="DEC5 Volume" value="60" />
+        <ctl name="ADC2 Volume" value="18" />
+        <ctl name="DEC5 Volume" value="66" />
     </path>
 
     <path name="voip-headphones">
