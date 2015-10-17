@@ -48,25 +48,25 @@
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          USB interfaces.  If the device doesn't want to support tething over USB this should
          be empty.  An example would be "usb.*" -->
-    <string-array translatable="false" name="config_tether_usb_regexs">
+    <string-array name="config_tether_usb_regexs">
         <item>"rndis0"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
          should be empty.  An example would be "softap.*" -->
-    <string-array translatable="false" name="config_tether_wifi_regexs">
+    <string-array name="config_tether_wifi_regexs">
         <item>"wlan0"</item>
     </string-array>
 
-    <string-array translatable="false" name="config_tether_bluetooth_regexs">
+    <string-array name="config_tether_bluetooth_regexs">
         <item>"bt-pan"</item>
     </string-array>
 
     <!-- Array of allowable ConnectivityManager network types for tethering -->
     <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
          [0,1,5,7] for TYPE_MOBILE, TYPE_WIFI, TYPE_MOBILE_HIPRI and TYPE_BLUETOOTH -->
-    <integer-array translatable="false" name="config_tether_upstream_types">
+    <integer-array name="config_tether_upstream_types">
         <item>0</item>
         <item>1</item>
         <item>5</item>
@@ -103,7 +103,7 @@
          before automatically restore the default connection.  Set -1 if the connection
          does not require auto-restore. -->
     <!-- the 6th element indicates boot-time dependency-met value. -->
-    <string-array translatable="false" name="networkAttributes">
+    <string-array name="networkAttributes">
         <item>"wifi,1,1,1,-1,true"</item>
         <item>"mobile,0,0,0,-1,true"</item>
         <item>"mobile_mms,2,0,2,60000,true"</item>
@@ -121,7 +121,7 @@
          based on the hardware -->
     <!-- An Array of "[ConnectivityManager connectionType],
                       [# simultaneous connection types]"  -->
-    <string-array translatable="false" name="radioAttributes">
+    <string-array name="radioAttributes">
        <item>"1,1"</item>
        <item>"0,1"</item>
        <item>"7,1"</item>
@@ -164,7 +164,7 @@
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true -->
-    <bool translatable="false" name="skip_restoring_network_selection">true</bool>
+    <bool name="skip_restoring_network_selection">true</bool>
 
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
@@ -196,13 +196,13 @@
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
     <!-- The default iface on which to monitor data use -->
-    <string name="config_datause_iface" translatable="false">rmnet0</string>
+    <string name="config_datause_iface">rmnet0</string>
 
     <!-- Enable overlay for all location components. -->
-    <bool name="config_enableNetworkLocationOverlay" translatable="false">false</bool>
-    <string name="config_networkLocationProviderPackageName" translatable="false">com.qualcomm.location</string>
-    <bool name="config_enableFusedLocationOverlay" translatable="false">false</bool>
-    <string name="config_fusedLocationProviderPackageName" translatable="false">com.qualcomm.location</string>
+    <bool name="config_enableNetworkLocationOverlay">false</bool>
+    <string name="config_networkLocationProviderPackageName">com.qualcomm.location</string>
+    <bool name="config_enableFusedLocationOverlay">false</bool>
+    <string name="config_fusedLocationProviderPackageName">com.qualcomm.location</string>
 
     <!-- Hardware 'face' keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
