@@ -23,27 +23,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Audio/Video
 #
 
-# AAC Stagefright
-PRODUCT_PROPERTY_OVERRIDES += \
-    media.aac_51_output_enabled=true
-
-# Audio offload
-PRODUCT_PROPERTY_OVERRIDES += \
-    audio.offload.buffer.size.kb=32 \
-    audio.offload.gapless.enabled=true \
-    audio.offload.multiple.enabled=false \
-    audio.offload.pcm.16bit.enable=true \
-    audio.offload.pcm.24bit.enable=true
-
-# AV offload
-PRODUCT_PROPERTY_OVERRIDES += \
-    av.offload.enable=true \
-    av.streaming.offload.enable=true
-
-# Smooth streaming Stagefright
-PRODUCT_PROPERTY_OVERRIDES += \
-    mm.enable.smoothstreaming=true
-
 # ALSA
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.handset.mic.type=digital
@@ -51,10 +30,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Platform
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.dualmic.config=endfire
-
-# MM parser
-PRODUCT_PROPERTY_OVERRIDES += \
-    mm.enable.qcom_parser=3310129
 
 # VoIP and Direct output for PCM format
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -64,10 +39,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Surround sound recording
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.ssr=false
-
-# Stagefright recorder compress offload
-PRODUCT_PROPERTY_OVERRIDES += \
-    tunnel.audio.encode=false
 
 # HW Composer debug level
 PRODUCT_PROPERTY_OVERRIDES += \

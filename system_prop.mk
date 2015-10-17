@@ -23,6 +23,26 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
+# IO Scheduler
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.io.scheduler=bfq
+
+# Media/offload
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.offload.buffer.size.kb=32 \
+    audio.offload.gapless.enabled=true \
+    audio.offload.multiple.enabled=false \
+    audio.offload.pcm.16bit.enable=true \
+    audio.offload.pcm.24bit.enable=true \
+    av.offload.enable=true \
+    av.streaming.offload.enable=true \
+    tunnel.audio.encode=false
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.aac_51_output_enabled=true \
+    mm.enable.smoothstreaming=true \
+    mm.enable.qcom_parser=3310129
+
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
     nfc.app_log_level=2 \
