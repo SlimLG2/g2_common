@@ -110,7 +110,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # MP-Decision
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.perf.cores_online=2
+    ro.qualcomm.perf.cores_online=1
 
 #
 # QCOM RIL
