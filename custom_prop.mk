@@ -16,7 +16,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Wi-Fi
 PRODUCT_PROPERTY_OVERRIDES += \
-    wifi.supplicant_scan_interval=180 \
     wlan.chip.vendor=brcm \
     wlan.chip.version=bcm4335
 
