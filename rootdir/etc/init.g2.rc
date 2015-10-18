@@ -84,6 +84,8 @@ on init
 
 on fs
     mount_all ./fstab.g2
+    write /sys/block/zram0/disksize 512M
+    swapon_all ./fstab.g2
     restorecon_recursive /sns
     restorecon_recursive /mpt
     setprop ro.crypto.fuse_sdcard true
@@ -339,6 +341,7 @@ on boot
     write /proc/sys/vm/swappiness 60
     write /proc/sys/vm/vfs_cache_pressure 20
     write /proc/sys/vm/drop_caches 3
+    write /proc/sys/vm/page-cluster 0
 
 # Services start here
 
