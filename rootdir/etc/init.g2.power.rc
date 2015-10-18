@@ -11,6 +11,13 @@ on early-init
     write /proc/sys/kernel/random/read_wakeup_threshold 512
     write /proc/sys/kernel/random/write_wakeup_threshold 256
 
+    # Simple GPU
+    write /sys/module/simple_gpu_algorithm/parameters/simple_gpu_activate 1
+    write /sys/module/simple_gpu_algorithm/parameters/simple_laziness 6
+    write /sys/module/simple_gpu_algorithm/parameters/simple_ramp_threshold 4000
+    write /sys/class/devfreq/fdb00000.qcom,kgsl-3d0/target_freq 320000000
+    write /sys/class/devfreq/fdb00000.qcom,kgsl-3d0/max_freq 320000000
+
 on enable-low-power
     write /sys/module/lpm_levels/enable_low_power/l2 4
     write /sys/module/msm_pm/modes/cpu0/power_collapse/suspend_enabled 1
