@@ -18,6 +18,11 @@ on early-init
     write /sys/class/devfreq/fdb00000.qcom,kgsl-3d0/target_freq 320000000
     write /sys/class/devfreq/fdb00000.qcom,kgsl-3d0/max_freq 320000000
 
+    # Intelli THERMAL
+    write /sys/module/msm_thermal/parameters/intelli_enabled Y
+    write /sys/module/msm_thermal/parameters/limit_temp_degC 76
+    write /sys/module/msm_thermal/parameters/core_limit_temp_degC 74
+
 on enable-low-power
     write /sys/module/lpm_levels/enable_low_power/l2 4
     write /sys/module/msm_pm/modes/cpu0/power_collapse/suspend_enabled 1
