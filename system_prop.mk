@@ -57,7 +57,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1 \
     ro.telephony.call_ring.multiple=0
 
+# RILD
 PRODUCT_PROPERTY_OVERRIDES += \
+    rild.libargs=-d/dev/smd0 \
     rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
     ro.telephony.ril_class=LgeLteRIL
 

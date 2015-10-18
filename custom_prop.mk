@@ -19,10 +19,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wlan.chip.vendor=brcm \
     wlan.chip.version=bcm4335
 
-# RIL
-PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libargs=-d /dev/smd0
-
 #
 # Audio/Video
 #
