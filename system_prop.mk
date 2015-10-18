@@ -24,8 +24,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
 # IO Scheduler
-PRODUCT_PROPERTY_OVERRIDES += \
-    sys.io.scheduler=bfq
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    sys.io.scheduler=bfq
 
 # Media/offload
 PRODUCT_PROPERTY_OVERRIDES += \
