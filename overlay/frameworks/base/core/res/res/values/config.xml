@@ -296,9 +296,9 @@
     <integer-array name="config_autoBrightnessLcdBacklightValues">
         <item>72</item>  <!--    0-40   -->
         <item>118</item> <!--   40-82   -->
-        <item>130</item> <!--   82-170  -->
-        <item>140</item> <!--  170-350  -->
-        <item>170</item> <!--  350-500  -->
+        <item>124</item> <!--   82-170  -->
+        <item>130</item> <!--  170-350  -->
+        <item>158</item> <!--  350-500  -->
         <item>178</item> <!--  500-700  -->
         <item>188</item> <!--  700-1000 -->
         <item>200</item> <!-- 1000-1400 -->
