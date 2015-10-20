@@ -15,8 +15,7 @@ on early-init
     write /sys/module/simple_gpu_algorithm/parameters/simple_gpu_activate 1
     write /sys/module/simple_gpu_algorithm/parameters/simple_laziness 6
     write /sys/module/simple_gpu_algorithm/parameters/simple_ramp_threshold 4000
-    write /sys/class/devfreq/fdb00000.qcom,kgsl-3d0/target_freq 320000000
-    write /sys/class/devfreq/fdb00000.qcom,kgsl-3d0/max_freq 320000000
+    write /sys/devices/fdb00000.qcom,kgsl-3d0/devfreq/fdb00000.qcom,kgsl-3d0/max_freq 320000000
 
     # Intelli THERMAL
     write /sys/module/msm_thermal/parameters/intelli_enabled Y
