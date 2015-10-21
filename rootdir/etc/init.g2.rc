@@ -334,7 +334,7 @@ on boot
 
     # LMK
     write /sys/module/lowmemorykiller/parameters/adj "0,1,3,5,7,15"
-    write /sys/module/lowmemorykiller/parameters/minfree "16384,20992,24576,28160,32768,293888"
+    write /sys/module/lowmemorykiller/parameters/minfree "19200,24000,28800,33600,38400,48000"
 
     # VM
     write /proc/sys/vm/block_dump 0
