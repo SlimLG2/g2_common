@@ -87,8 +87,13 @@ on enable-low-power
     write /sys/class/devfreq/qcom,cpubw.42/governor cpubw_hwmon
     write /sys/class/devfreq/fdb00000.qcom,kgsl-3d0/governor msm-adreno-tz
 
+    # MP-Decision
     write /data/system/default_values ""
+
+    # MM-OSAL
     write /data/mmosal_logmask.cfg 0
+    chown root system /data/mmosal_logmask.cfg
+    chmod 664 /data/mmosal_logmask.cfg
 
     # Permission for Power HAL CM extension
     chown root system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
