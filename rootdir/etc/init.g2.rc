@@ -84,7 +84,6 @@ on init
 
 on fs
     mount_all ./fstab.g2
-    write /sys/block/zram0/disksize 512M
     restorecon_recursive /sns
     restorecon_recursive /mpt
     setprop ro.crypto.fuse_sdcard true
