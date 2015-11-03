@@ -117,6 +117,9 @@ include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
     device/lge/g2-common/sepolicy
 
+BOARD_SEPOLICY_UNION += \
+    thermanager.te
+
 # Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
