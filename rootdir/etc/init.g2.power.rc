@@ -21,7 +21,7 @@ on property:sys.boot_completed=1
     write /sys/devices/fdb00000.qcom,kgsl-3d0/devfreq/fdb00000.qcom,kgsl-3d0/max_freq 320000000
 
     # Intelli THERMAL
-    write /sys/module/msm_thermal/parameters/intelli_enabled Y
+    write /sys/module/msm_thermal/parameters/intelli_enabled N
     write /sys/module/msm_thermal/parameters/limit_temp_degC 76
     write /sys/module/msm_thermal/parameters/core_limit_temp_degC 74
 
