@@ -441,10 +441,12 @@ service thermanager /system/bin/thermanager /system/etc/thermanager.xml
     user root
     group root
 
-service time_daemon /system/bin/time_daemon
+# OSS time solution
+service timekeep /system/bin/timekeep restore
     class late_start
     user root
     group root
+    oneshot
 
 # WiFi
 service p2p_supplicant /system/bin/wpa_supplicant \

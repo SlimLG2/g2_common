@@ -17,6 +17,7 @@
 /data/system/default_values           u:object_r:mpdecision_data:s0
 /dev/btlock                           u:object_r:btlock_file:s0
 /system/bin/thermanager               u:object_r:thermanager_exec:s0
+/system/bin/timekeep		          u:object_r:timekeep_exec:s0
 
 /dev/bcm2079x                         u:object_r:nfc_device:s0
 /dev/socket/mpdecision(/.*)?          u:object_r:mpctl_socket:s0
