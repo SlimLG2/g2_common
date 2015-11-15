@@ -8,6 +8,9 @@ on property:sys.boot_completed=1
     write /sys/kernel/sched/arch_power 0
     write /sys/kernel/sched/gentle_fair_sleepers 0
 
+    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
+    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
+
     setprop sys.perf.profile 1
 
     # Tune entropy parameters
