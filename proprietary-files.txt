@@ -172,7 +172,6 @@ vendor/lib/libCommandSvc.so
 vendor/lib/libconfigdb.so
 vendor/lib/libdiag.so
 vendor/lib/libdisp-aba.so
-vendor/lib/libDivxDrm.so
 vendor/lib/libdrmdecrypt.so
 vendor/lib/libdrmdiag.so
 vendor/lib/libdrmfs.so
@@ -180,7 +179,6 @@ vendor/lib/libdrmtime.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsucsd.so
 vendor/lib/libdsutils.so
-vendor/lib/libExtendedExtractor.so
 vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
 vendor/lib/libFileMux.so
@@ -232,8 +230,6 @@ vendor/lib/libmmipstreamnetwork.so
 vendor/lib/libmmipstreamsourcehttp.so
 vendor/lib/libmmipstreamutils.so
 vendor/lib/libmmjpeg.so
-vendor/lib/libmmosal.so
-vendor/lib/libmmparser.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmsapm_jni.so
 vendor/lib/libnetmgr.so
@@ -284,7 +280,6 @@ vendor/lib/libsensor_reg.so
 vendor/lib/libsensor_test.so
 vendor/lib/libsensor_thresh.so
 vendor/lib/libsensor_user_cal.so
-vendor/lib/libSHIMDivxDrm.so
 vendor/lib/libsmemlog.so
 vendor/lib/libssd.so
 vendor/lib/libSSEPKCS11.so
