@@ -10,10 +10,6 @@ on property:sys.boot_completed=1
 
     setprop sys.perf.profile 1
 
-    # Permission for Power HAL CM extension
-    chown root system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
-    chmod 664 /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
-
     # Tune entropy parameters
     write /proc/sys/kernel/random/read_wakeup_threshold 128
     write /proc/sys/kernel/random/write_wakeup_threshold 256
@@ -210,6 +206,10 @@ on property:sys.perf.profile=1
     write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor interactive
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor interactive
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor interactive
+
+    # Permission for Power HAL CM extension
+    chown root system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+    chmod 664 /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
 
     write /sys/class/devfreq/qcom,cpubw.42/governor msm_cpufreq
     write /sys/class/devfreq/fdb00000.qcom,kgsl-3d0/governor msm-adreno-tz
