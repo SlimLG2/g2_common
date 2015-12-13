@@ -108,11 +108,6 @@ on enable-low-power
     # MP-Decision
     rm /data/system/default_values
 
-    # MM-OSAL
-    write /data/mmosal_logmask.cfg 0
-    chown root system /data/mmosal_logmask.cfg
-    chmod 664 /data/mmosal_logmask.cfg
-
     write /sys/module/msm_thermal/core_control/enabled 0
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
