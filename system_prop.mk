@@ -47,10 +47,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     nfc.app_log_level=2 \
     nfc.enable_protocol_log=0
 
-# Perf
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
-
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1 \
