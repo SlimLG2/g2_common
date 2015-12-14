@@ -12,6 +12,9 @@ on property:sys.boot_completed=1
 
     setprop sys.perf.profile 1
 
+    # Lower GPU
+    write /sys/devices/fdb00000.qcom,kgsl-3d0/devfreq/fdb00000.qcom,kgsl-3d0/max_freq 320000000
+
     # Tune entropy parameters
     write /proc/sys/kernel/random/read_wakeup_threshold 128
     write /proc/sys/kernel/random/write_wakeup_threshold 256
