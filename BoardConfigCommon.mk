@@ -96,6 +96,7 @@ TARGET_POWERHAL_VARIANT := g2
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
+BOARD_USES_QC_TIME_SERVICES := true
 
 # Recovery
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
@@ -119,13 +120,7 @@ BOARD_SEPOLICY_DIRS += \
     device/lge/g2-common/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    property.te \
-    property_contexts \
-    service.te \
-    service_contexts \
-    system_app.te \
-    thermanager.te \
-    timekeep.te
+    thermanager.te
 
 # Wi-Fi
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
